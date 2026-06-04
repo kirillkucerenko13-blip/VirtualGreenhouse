@@ -1,0 +1,138 @@
+:root {
+  --main-color: #5b8e55;
+  --h1-size: 7rem;
+  --plants-backround: #ebecd2;
+  --background-color: #fafafa;
+}
+body {
+  margin: 0;
+  width: 100%;
+  font-family: "Intel", sans-serif;
+  background-color: var(--background-color);
+}
+main {
+  min-height: 100vh;
+}
+h1 {
+  font-size: var(--h1-size);
+  color: var(--main-color);
+}
+span {
+  color: black;
+}
+/* All section */
+.section-one {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+/* Lefft section */
+.section-menu {
+  width: 50%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+/* title (MyGarden) */
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Big btn */
+.water {
+  width: 170px;
+  height: 170px;
+  position: absolute;
+  top: 300px;
+  left: 240px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  padding: 30px;
+  transition: all, 0.5s;
+}
+.water:hover {
+  cursor: pointer;
+  width: 180px;
+  height: 180px;
+  top: 290px;
+  left: 230px;
+}
+/* Right Section */
+.section-garden {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+/* Two btn top */
+.sort-system {
+  margin-top: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+/* Btn sort and dried */
+.sort,
+.dried {
+  width: 40px;
+  height: 40px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  padding: 10px;
+  transition: all, 0.5s;
+}
+.sort:hover,
+.dried:hover {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+/* Plants */
+.grid-garden {
+  display: grid;
+  grid-template-areas:
+    "plant1 plant2 plant3"
+    "plant4 plant5 plant6";
+  gap: 10px;
+  margin-right: 20px;
+}
+/* Plants card */
+.plants {
+  position: relative;
+  background-color: var(--plants-backround);
+  text-align: center;
+  box-sizing: border-box;
+  margin-top: 60px;
+  padding-bottom: 20px;
+  border-radius: 15px;
+  border: 2px solid var(--plants-backround);
+}
+.plants:hover {
+  cursor: pointer;
+  border: 2px solid #ffcfd9;
+}
+/* Plants img  */
+.plant-img {
+  width: 85%;
+  height: 200px;
+  display: block;
+  margin-top: -60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* img top-right on plants card */
+.img-dried {
+  width: 30px;
+  height: 30px;
+  background-color: #ff745d;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  z-index: 1;
+}
